@@ -9,8 +9,10 @@
 - [Reporte de Análisis](#reporte-de-análisis)
   - [Análisis global de cantidad de víctimas vs variables de tiempo](#análisis-global-de-cantidad-de-víctimas-vs-variables-de-tiempo)
   - [Análisis global de cantidad de víctimas vs variables cualitativas](#análisis-global-de-cantidad-de-víctimas-vs-variables-cualitativas)
-  - [Análisis detallado por año cantidad de víctimas vs variables cualitativas (barras apiladas - gráfico de líneas)](#análisis-detallado-por-año-cantidad-de-víctimas-vs-variables-cualitativas-barras-apiladas---gráfico-de-líneas)
-  - [Análisis cantidad de víctimas vs variables cualitativas víctimas (bonus)](#análisis-cantidad-de-víctimas-vs-variables-cualitativas-víctimas-bonus)
+  - [Análisis detallado por año cantidad de víctimas vs variables cualitativas (barras apiladas - gráfico de líneas)](#análisis-detallado-por-año-cantidad-víctimas-vs-variables-cualitativas-barras-apiladas---gráfico-de-lineas)
+
+  - [Análisis relacion cantidad víctimas vs variables cualitativas](#análisis-relacion-cantidad-víctimas-vs-variables-cualitativas)
+  - [Análisis cantidad de víctimas vs variables cualitativas víctimas (bonus)](#análisis-cantidad-víctimas-vs-variables-cualitativas-víctimas-complementario)
 
 ## Introducción
 En este proyecto se asumirá el Rol de Data Analyst con el fin de explorar y analizar los siniestros viales (eventos que involucran vehículos en las vías públicas y que pueden tener diversas causas, como colisiones entre automóviles, motocicletas, bicicletas o peatones, atropellos, choques con objetos fijos o caídas de vehículos) en la Ciudad de Buenos Aires entre el periodo 2016 al 2021, el fin de este proyecto es generar información que sea relevante y tenga un valor agregado para la toma de decisiones asertivas y poder disminur las tasas de siniestros viales y por ende víctimas mortales.
@@ -53,7 +55,7 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
     ![Suma de víctimas por mes](03_Imagenes/04_suma_victimas_por_mes_tasa_de_cambio.png)
 
-    El siguiente gráfico de lineas muestra la cantidad de víctimas fatales analizadas mes a mes durante todos los años de data (2016-2021), en donde se puede evidenciar que en el mes de diciembre del año 2020 hubo un aumento significativo en la cantidad de víctimas y tambien los últimos dos meses del año 2021 la curva tiende a la alza.
+    El siguiente gráfico de lineas muestra la cantidad de víctimas fatales analizadas mes a mes durante todos los años de data (2016-2021), en donde se puede evidenciar que en el mes de diciembre del año 2020 hubo un aumento significativo en la cantidad de víctimas y tambien los últimos tres meses del año 2021 la curva tiende a la alza.
 
     ![Suma de víctimas por mes](03_Imagenes/18_suma_victimas_por_mes_mes_lineas.png)
 
@@ -61,12 +63,12 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
     ![Suma de víctimas por día](03_Imagenes/05_suma_victimas_por__dia.png)
 
-* **Víctimas por franja horaria:** En este apartado se realiza un análisis mediante un gráfico de barras con la cantidad de víctimas mortales respecto a la franja horaria en donde sucedió el accidente, evidenciando que la franja horario con mayor registro de víctimas mortales es entre las 5 a las 7 de la mañana, esto puede ser debido a que a esa hora se presenta la hora pico de tráfico y la mayoría de las personas van rumbo a su trabajo. y las franjas en donde menos ocurren accidentes con víctimas mortales son entre la 1 a las 2 de la tarde (esto puede deberse a que a esa hora muchas personas se encuentran en su horario de almuerzo) y entre las 2 a 3 de la mañana (debido a la poca cantidad de tráfico que hay a esa hora).
+* **Víctimas por franja horaria:** En este apartado se realiza un análisis mediante un gráfico de barras con la cantidad de víctimas mortales respecto a la franja horaria en donde sucedió el accidente, evidenciando que la franja horaria con mayor registro de víctimas mortales es entre las 5 a las 7 de la mañana, esto puede ser debido a que a esa hora se presenta la hora pico de tráfico y la mayoría de las personas van rumbo a su trabajo. y las franjas en donde menos ocurren accidentes con víctimas mortales son entre la 1 a las 2 de la tarde (esto puede deberse a que a esa hora muchas personas se encuentran en su horario de almuerzo) y entre las 2 a 3 de la mañana (debido a la poca cantidad de tráfico que hay a esa hora).
 
     ![Suma de víctimas por franja horaria](03_Imagenes/06_suma_victimas_por__franja_horaria.png)
 
 ### Análisis global de cantidad de víctimas vs variables cualitativas
-* **Víctimas por tipo de calle:** En el siguiente apartado analizamos mediante un gráfico de barras la cantidad de víctimas mortales de acuerdo al tipo de calle en donde ocurrió el accidente, evidenciando que el 61.73% de los eventos ocurrió en una avenida, ahora, si sumamos la GRAL PAZ como avenida podemos notar que el 71.23% de los accidentes ocurrio en una avenida y en donde menos ocurrió accidentes fueron en las autopisas seguidas de las calles con un 9.50% y un 17.27% respectivamente.
+* **Víctimas por tipo de calle:** En el siguiente apartado analizamos mediante un gráfico de barras la cantidad de víctimas mortales de acuerdo al tipo de calle en donde ocurrió el accidente, evidenciando que el 61.73% de los eventos ocurrió en una avenida, ahora, si sumamos la GRAL PAZ como avenida podemos notar que el 71.23% de los accidentes ocurrio en una avenida y en donde menos ocurrió accidentes fue en las autopisas seguidas de las calles con un 9.50% y un 17.27% respectivamente.
 
     ![Suma de víctimas por tipo de calle](03_Imagenes/07_suma_victimas_por__tipo_calle.png)
 
@@ -74,11 +76,11 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
     ![Suma de víctimas por Comuna](03_Imagenes/08_suma_victimas_por__comuna.png)
 
-* **Víctimas por tipo de participantes:** En este apartado mediante un gráfico de barras analizamos la cantidad de víctimas de acuerdo a los participantes del accidente, en este caso nos encontramos que el peaton junto con los vehiculos de pasajeros son los que tienen mayor porcentaje de participantes en los accidentes con un 16.33% sobre el total de las victimas siendo el peaton la victima y el vehiculo de pasajeros el acusado, seguido de moto-autos y moto-cargas con un 13.06% y 12.44% respectivamente en donde las victimas son los usuarios de motocicletas tambien con una rúbrica importante.
+* **Víctimas por tipo de participantes:** En este apartado mediante un gráfico de barras analizamos la cantidad de víctimas de acuerdo a los participantes del accidente, en este caso nos encontramos que el peaton junto con los vehiculos de pasajeros son los que tienen mayor porcentaje de participantes en los accidentes con un 16.33% sobre el total de las victimas siendo el peaton la victima y el vehiculo de pasajeros el acusado, seguido de moto-autos y moto-cargas con un 13.06% y 12.44% respectivamente en donde las víctimas son los usuarios de motocicletas tambien con una rúbrica importante.
 
     ![Suma de víctimas por participantes](03_Imagenes/09_suma_victimas_por__participantes.png)
 
-* **Víctimas por Tipo de víctima:** se analiza el porcentaje y cantidad de víctimas de acuerdo al tipo de víctima, corroborando que los motociclistas son los que mayor porcentaje de participación tienen con un 42.04% sobre el total, seguido y con una participación muy importante el peaton con un 37.15%, es decir tan solo estos dos tipos de victima aportan un 79.19% de victimas fatales lo que conlleva a analizar en profundidad las situaciones de estas dos tipos de victimas para reducir estas tasas que en comparación con las demas victimas estan practicamente triplicadas y cuadruplicadas respectivamente.
+* **Víctimas por Tipo de víctima:** se analiza el porcentaje y cantidad de víctimas de acuerdo al tipo de víctima, corroborando que los motociclistas son los que mayor porcentaje de participación tienen con un 42.04% sobre el total, seguido y con una participación muy importante el peaton con un 37.15%, es decir tan solo estos dos tipos de victima aportan un 79.19% de victimas fatales lo que conlleva a analizar en profundidad las situaciones de estas dos tipos de víctimas para reducir estas tasas que en comparación con las demas víctimas estan prácticamente triplicadas y cuadruplicadas respectivamente.
 
     ![Suma de víctimas por tipo victima](03_Imagenes/10_suma_victimas_por__tipo_victima.png)
 
@@ -89,11 +91,11 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
 ### Análisis detallado por año cantidad víctimas vs variables cualitativas (barras apiladas - gráfico de lineas)
 
-* **Víctimas por año de acuerdo a franja horaria:** En este gráfico de barras apiladas podemos evidenciar el porcentaje de víctimas fatales por franja horaria desglosado por años y seleccionando las 5 categorías con mayor participación para un análisis mas detallado en donde no se encuentra un patron claro pero si la variación que tuvo cada una de las 5 categorías mas importante en los últimos 5 años. 
+* **Víctimas por año de acuerdo a franja horaria:** En este gráfico de barras apiladas podemos evidenciar el porcentaje de víctimas fatales por franja horaria desglosado por años y seleccionando las 5 categorías con mayor participación para un análisis mas detallado en donde no se encuentra un patron claro pero si la variación que tuvo cada una de las 5 categorías mas importante en los últimos 5 años. Algo importante que se evidencia en este gráfica es que la franja horario de las 6am entre el 2019 al 2020 se quintuplico en tan solo un año. Además la franja horaria de las 7am que mas aporta víctimas ha tenido variación en los últimos 5 años estando con tendencia a la baja en el último año y contrayendose aprox. un 40%.
 
     ![Suma de víctimas por franja horaria](03_Imagenes/12_suma_victimas_por__franja_apiladas.png)
 
-* **Víctimas por año de acuerdo a la comuna:** En este gráfico de barras apiladas y lineas podemos evidenciar el porcentaje de victimas fatales de acuerdo a la comuna desglosado por años para un análisis mas detallado y dejando las 5 categorias con mayor participación. por ejemplo se evidencia que la comuna 1 que fue en donde evidenciamos en nuestro gráfico de barras con mas víctimas mortales a disminuido paulatinamente con el pasar de los años aproximadamente un 6% y la comuna 4 por el contrario aumento exponencialmente el ultimo año.    
+* **Víctimas por año de acuerdo a la comuna:** En este gráfico de barras apiladas y lineas podemos evidenciar el porcentaje de victimas fatales de acuerdo a la comuna desglosado por años para un análisis mas detallado y dejando las 5 categorias con mayor participación. por ejemplo se evidencia que la comuna 1 que fue en donde evidenciamos en nuestro gráfico de barras con mas víctimas mortales a disminuido paulatinamente con el pasar de los años aproximadamente un 6% y la comuna 4 por el contrario aumento exponencialmente el ultimo año (se triplicarón las víctimas en esta comuna).    
 
     ![Suma de víctimas por comuna](03_Imagenes/13_suma_victimas_por__comunas_apiladas.png)
 
@@ -103,7 +105,7 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
     ![Suma de víctimas por calle](03_Imagenes/14_suma_victimas_por__tipo_calle_apiladas.png)
 
-* **Víctimas por año de acuerdo a los participantes:** En este gráfico de barras apiladas podemos evidenciar el porcentaje de víctimas fatales de acuerdo a los participantes en los accidentes desglosado por años para un análisis mas detallado. Se puede evidenciar que para la categoría mas grande en este caso peaton-pasajeros ha sido muy variable pero la tendencia es a la baja ya que si comparamos el 2021 con el 2016 hay una disminución aproximadamente del 5%
+* **Víctimas por año de acuerdo a los participantes:** En este gráfico de barras apiladas podemos evidenciar el porcentaje de víctimas fatales de acuerdo a los participantes en los accidentes desglosado por años para un análisis mas detallado. Se puede evidenciar que para la categoría mas grande en este caso peaton-pasajeros ha sido muy variable pero la tendencia es a la baja ya que si comparamos el 2021 con el 2016 hay una disminución aproximadamente del 5%. También se puede evidenciar que la categoría moto que en este caso es la victima en el año 2021 ha aumentado aproximadamente un 90% respecto al 2020 cifras alarmantes y en donde hay que enfocarse.
 
     ![Suma de víctimas por participantes](03_Imagenes/15_suma_victimas_por_participantes_apiladas.png)
 
@@ -122,7 +124,21 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
     ![Suma de víctimas por acusado](03_Imagenes/22_suma_victimas_por_tipo_acusado_lineas.png)
 
 ### Análisis relacion cantidad víctimas vs variables cualitativas 
+* **Relacion Cantidad de Víctimas por Tipo de Calle (Discriminando Tipo de Víctima):** Esta gráfica nos muestra la relación de la cantidad de víctimas por tipo de calle discriminado por tipo de víctima, donde evidenciamos que en las avenidas y en las calles por ejemplo la mayor cantidad de víctimas son los peatones seguidos de las motos y representan aproximadamente un 80% de víctimas en las dos categorías, estando la categoría peaton un escalon por encima de la categoría moto, por el contrario en las categoría autopista y general paz la categoría moto representa aprox. un 60% de las víctimas en las dos categorías.
 
+    ![Relacion Cantidad de Víctimas por Tipo de Calle](03_Imagenes/31_Cantidad_Víctimas_Tipo_Calle_(Discriminando_Tipo_de_Víctima)_barras.png)
+
+* **Relacion Cantidad de Víctimas por Tipo de Calle (Discriminando Tipo de Acusado):** Y haciendo el mismo análisis pero ahora en la categoría Tipo de Acusado y en la subcategoría avenidas se evidencia una participación muy igualitaria entre el auto y los autos de pasajeros es decir el servicio publico, aportando aproximadamente entre las dos categorías un 60% de las víctimas mortales y tambien en las avenidas, en un escalon por debajo y una participación del 19% esta el transporte de carga. En las calles encontramos practicamente las mismas participaciones de la categorías pero en menor proporción y en la subcategoría autopistas se evidencia que los autos de pasajeros practicamente que no tienen participación en cuanto a víctimas siendo en esta subcategoría los vehículos de carga y autos los que mas víctimas mortales generan respectivamente.
+
+    ![Relacion Cantidad de Víctimas por Tipo de Calle](03_Imagenes/32_Cantidad_Víctimas_Tipo_Calle_(Discriminando_Tipo_de_acusado)_barras.png)
+
+* **Relacion Cantidad de Víctimas por Comuna (Discriminando Tipo de Víctima):** Evidenciamos mediante un gráfico de barras apiladas que en las comunas 1 y 4 el peaton y las motos tienen un porcentaje de participación muy proporcional, sumando entre los dos en cada categoría aproximadamente el 80% de las víctimas y en la comuna 9 podemos evidenciar algo interesante y es que la categoria víctima auto se triplico con respecto a las columnas 1 y 4, el resto de categorías si permanecen constantes y con poca variación en el resto de comunas.
+
+    ![Relacion Cantidad de Víctimas por Comuna](03_Imagenes/33_Cantidad_Víctimas_comuna_(Discriminando_Tipo_de_victima)_barras.png)
+
+* **Relacion Cantidad de Víctimas por Comuna (Discriminando Tipo de Acusado):** Y realizando la discriminación por tipo de acusado, se puede evidenciar que los autos son los que en aproximadamente un 80% de las comunas tienen el porcentaje de participación mas alta, unicamente sobrepasandolo la categoría pasajeros en la comuna 1 y la categoría cargas en la comuna 4.
+
+    ![Relacion Cantidad de Víctimas por Comuna](03_Imagenes/34_Cantidad_Víctimas_comuna_(Discriminando_Tipo_de_acusado)_barras.png)
 
 ### Análisis cantidad víctimas vs variables cualitativas víctimas (Complementario)
 
@@ -130,7 +146,7 @@ El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos arch
 
     ![Suma de víctimas por rol](03_Imagenes/23_suma_victimas_por_rol_barras.png)
 
-    Ahora se realiza un gráfico de lineas para analizar el comportamiento de cada uno de estos roles durante todos los años analizados, evidenciando que el rol de peaton en los últimos dos años tiende a la baja y normalización mientras que las victimas en el rol de conductor si bien estuvo tambien a la baja entre el 2016 al 2020 el último volvió a aumentar considerablemente.
+    Ahora se realiza un gráfico de lineas para analizar el comportamiento de cada uno de estos roles durante todos los años analizados, evidenciando que el rol de peaton en los últimos dos años tiende a la baja y normalización mientras que las victimas en el rol de conductor si bien estuvo tambien a la baja entre el 2016 al 2020 el último volvió a aumentar considerablemente junto con el pasajero acompañante.
 
     ![Suma de víctimas por rol](03_Imagenes/24_suma_victimas_por_rol_lineas.png)
 
@@ -147,7 +163,7 @@ En el siguiente gráfico de barras evidenciamos que el sexo masculino sobrepasa 
 
     ![Suma de víctimas por victima](03_Imagenes/27_suma_victimas_por_sexo_barras.png)
 
-    E igualmente se realiza un gráfico de lineas para analizar su comportamiento a lo largo de los 6 años de estudio mostrando casi una curvatura identica tanta el genero femenino como masculino y con un leve aumento de los dos generos en el último año.
+    E igualmente se realiza un gráfico de lineas para analizar su comportamiento a lo largo de los 6 años de estudio mostrando aprox. una curvatura identica tanta el género femenino como masculino y con un leve aumento de los dos géneros en el último año.
 
     ![Suma de víctimas por victima](03_Imagenes/28_suma_victimas_por_sexo_lineas.png)
     
@@ -155,10 +171,12 @@ En el siguiente gráfico de barras evidenciamos que el sexo masculino sobrepasa 
 
     ![Suma de víctimas por rango](03_Imagenes/29_suma_victimas_por_rango_edad_barras.png)
 
-    Adicionalmente y como se hizo en los gráficos anteriores se realizo un gráfica de lineas para analizar su evolucion en el tiempo evidenciando que en el ultimo año 7 de las 10 categorias que se contemplo para el análisis estan en crecimiento.
+    Adicionalmente y como se hizo en los gráficos anteriores se realizo un gráfica de lineas para analizar su evolución en el tiempo evidenciando que en el último año 7 de las 10 categorías que se contemplo para el análisis estan en crecimiento.
+
     ![Suma de víctimas por rango](03_Imagenes/30_suma_victimas_por_rango_edad_lineas.png)
 
 
-Nota: El archivo de Power Bi con el dashboard será subido al repositorio en una fecha posterior a la presentación del proyecto.
+**Nota:** El archivo de Power Bi con el dashboard será subido al repositorio en una fecha posterior a la presentación del proyecto.
 
 
+## Fin de la Presentación
