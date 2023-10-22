@@ -37,6 +37,8 @@ El stack tecnológico utilizado para este proyecto fue el siguiente:
 ## Explicación del Repositorio
 El repositorio tiene una carpeta llamada "02_Data", ésta carpeta tiene dos archivos, el archivo homicidios.xlsx fue el que se utilizo para el presente proyecto y se encuentra explorado y analizado en el notebook llamado "proyecto02_EDA.ipynb" el cuál sera abordado en profundidad en el siguiente apartado "Reporte de Análisis". Esta carpeta también tiene otro archivo llamado "lesiones.xlsx" el cual se deja como opcional para un desarrollo posterior.
 
+Finalmente el repositorio contiene un archivo .pbinx que es un archivo de power bi, el cuál contiene todos los dashboards y kpi's desarrollados en este proyecto de data analytics.
+
 ## Reporte de Análisis
 ### Análisis global de cantidad de víctimas vs variables de tiempo
 * **Víctimas por año:** En este apartado se muestra el total de víctimas mortales entre el 2016 al 2021 desglosado por años en una gráfica de barras en donde se identifica que la cantidad de víctimas mortales en los ultimos tres años (2019-2021) decreció considerablemente respecto a los ultimos tres años anteriores (2016-2018). Pero si analizamos el ultimo año las víctimas mortales han aumentado.
@@ -174,9 +176,6 @@ En el siguiente gráfico de barras evidenciamos que el sexo masculino sobrepasa 
     Adicionalmente y como se hizo en los gráficos anteriores se realizo un gráfica de lineas para analizar su evolución en el tiempo evidenciando que en el último año 7 de las 10 categorías que se contemplo para el análisis estan en crecimiento.
 
     ![Suma de víctimas por rango](03_Imagenes/30_suma_victimas_por_rango_edad_lineas.png)
-
-
-**Nota:** El archivo de Power Bi con el dashboard será subido al repositorio en una fecha posterior a la presentación del proyecto.
 
 
 ## Fin de la Presentación
